@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark">
+<title>WholeSignal Support</title>
+<meta name="description" content="Help with WholeSignal for iPhone and Apple Watch: setup, Health access, Watch pairing, bike setup, the optional log, reminders and your data.">
+<style>
+  :root {
+    --bg: #000000;
+    --surface: #121212;
+    --line: #292929;
+    --text: #ffffff;
+    --muted: #9e9e9e;
+    --dim: #616161;
+    --measure: 40rem;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font: 17px/1.6 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  }
+  main { max-width: var(--measure); margin: 0 auto; padding: 56px 16px 80px; }
+  .mark { display: block; width: 44px; height: 44px; margin-bottom: 28px; }
+  .eyebrow, h2 { font-size: 12px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; color: var(--muted); }
+  h1 { font-size: 34px; line-height: 1.15; letter-spacing: 0.04em; text-transform: uppercase; font-weight: 800; margin: 8px 0 12px; }
+  .lede { font-size: 20px; margin: 0 0 32px; }
+  nav { display: flex; flex-wrap: wrap; gap: 8px; margin: 0 0 40px; }
+  nav a {
+    font-size: 12px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; text-decoration: none;
+    color: var(--text); background: var(--surface); border-radius: 999px; padding: 10px 14px; min-height: 44px;
+    display: inline-flex; align-items: center;
+  }
+  h2 { margin: 48px 0 8px; padding-top: 20px; border-top: 1px solid var(--line); }
+  details { background: var(--surface); border-radius: 21px; margin: 12px 0; padding: 0 20px; }
+  summary {
+    cursor: pointer; list-style: none; font-weight: 600; padding: 16px 28px 16px 0; position: relative; min-height: 44px;
+  }
+  summary::-webkit-details-marker { display: none; }
+  summary::after { content: "+"; position: absolute; right: 0; top: 14px; color: var(--muted); font-weight: 400; font-size: 22px; line-height: 1; }
+  details[open] summary::after { content: "–"; }
+  details > div { padding: 0 0 12px; }
+  p, li { color: var(--muted); }
+  strong { color: var(--text); font-weight: 600; }
+  ol, ul { padding-left: 1.2em; }
+  li { margin: 6px 0; }
+  .path { color: var(--text); white-space: nowrap; }
+  a { color: var(--text); text-underline-offset: 3px; }
+  .contact { background: var(--surface); border-radius: 21px; padding: 20px; margin-top: 16px; }
+  .contact p { margin: 0 0 8px; }
+  footer { margin-top: 56px; padding-top: 20px; border-top: 1px solid var(--line); color: var(--dim); font-size: 14px; }
+  @media (max-width: 480px) { h1 { font-size: 28px; } .path { white-space: normal; } }
+</style>
+</head>
+<body>
+<main>
+  <svg class="mark" viewBox="0 0 44 44" aria-hidden="true">
+    <circle cx="22" cy="22" r="20" fill="none" stroke="#fff" stroke-width="2"/>
+    <circle cx="22" cy="28" r="14" fill="none" stroke="#fff" stroke-width="2"/>
+    <circle cx="22" cy="33" r="8" fill="none" stroke="#fff" stroke-width="2"/>
+  </svg>
+  <div class="eyebrow">WholeSignal</div>
+  <h1>Support</h1>
+  <p class="lede">Answers to common questions. If something isn't covered here, write to us. There's no account to sign in to, so all we need is your question.</p>
+
+  <nav aria-label="Topics">
+    <a href="#start">Getting started</a>
+    <a href="#health">Health access</a>
+    <a href="#watch">Apple Watch</a>
+    <a href="#bike">Bike setup</a>
+    <a href="#log">Log and reminders</a>
+    <a href="#data">Your data</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <h2 id="start">Getting started</h2>
+  <details>
+    <summary>Is WholeSignal free?</summary>
+    <div><p>Yes. WholeSignal is free, with no ads, no subscriptions and no in-app purchases. It's available on the App Store in every country and region where the App Store is, in English.</p></div>
+  </details>
+  <details>
+    <summary>What does the setup ask?</summary>
+    <div>
+      <p>The first time you open WholeSignal, a short setup asks what you train with: whether you use an Apple Watch, your bike (a spin bike with a resistance knob, a smart trainer or bike with sensors, or no bike), the kettlebells you own and whether you have a pull-up bar. It then explains what WholeSignal reads from Apple Health, and why, before iOS asks for permission. Last, you choose whether to show the private Log tab. It's off unless you turn it on.</p>
+      <p>You can tap <strong>Not now</strong> on the Health page. Today then shows <strong>Connect Apple Health</strong> whenever you're ready.</p>
+    </div>
+  </details>
+  <details>
+    <summary>How do I change my kettlebells, or switch between kg and lb?</summary>
+    <div>
+      <p>Tap the <strong>gear icon</strong> on Today, then <span class="path">Equipment</span>. Pick kg or lb, then tap each bell you own. Sessions suggest bells from the ones you picked. Changing the unit clears the list, because a 12 kg bell isn't a 12 lb bell, so pick your bells again afterwards.</p>
+      <p>The same screen changes your bike type, whether you have a pull-up bar, and whether you use an Apple Watch.</p>
+    </div>
+  </details>
+
+  <h2 id="health">Apple Health</h2>
+  <details>
+    <summary>Why does WholeSignal ask for Health access?</summary>
+    <div>
+      <p>WholeSignal reads heart rate, resting heart rate, HRV, sleep, breathing rate, wrist temperature, blood oxygen, fitness and workout records to set your heart-rate zones, show how recovered you are, analyse your sleep and suggest today's session. It saves the workouts you do, with heart rate, energy, cadence, power and your effort rating, back to Health.</p>
+      <p>Health data stays on your devices. It is never used for advertising and never shared.</p>
+    </div>
+  </details>
+  <details>
+    <summary>I said no, or Today says "No data". How do I fix it?</summary>
+    <div>
+      <ol>
+        <li>Open the <strong>Health</strong> app, tap your profile picture, then <span class="path">Apps › WholeSignal</span>. On older iOS versions, go to <span class="path">Settings › Privacy &amp; Security › Health › WholeSignal</span>.</li>
+        <li>Turn on the categories you want to share. Allow <strong>Workouts</strong> under writing, because workouts can't be recorded without it.</li>
+        <li>Go back to WholeSignal and pull down on Today to refresh.</li>
+      </ol>
+      <p>Recovery and sleep need some history. Wear your Apple Watch to bed for a few nights. WholeSignal compares each signal with your own normal, so its picture gets sharper over the first couple of weeks.</p>
+    </div>
+  </details>
+  <details>
+    <summary>Is WholeSignal a medical app?</summary>
+    <div><p>No. It gives training guidance. It doesn't diagnose, treat or prevent anything, and it never suggests an amount for anything you log. If you have questions about your health or your medicines, ask a doctor or pharmacist.</p></div>
+  </details>
+
+  <h2 id="watch">Apple Watch</h2>
+  <details>
+    <summary>How do I get WholeSignal on my Watch?</summary>
+    <div>
+      <p>The Watch app comes with the iPhone app. If it doesn't show up on the Watch, open the <strong>Watch</strong> app on your iPhone, scroll to <span class="path">Available Apps</span> and tap <strong>Install</strong> next to WholeSignal. Open it on the Watch once and allow Health access there too.</p>
+    </div>
+  </details>
+  <details>
+    <summary>I tapped "Start with Apple Watch" and nothing happened.</summary>
+    <div>
+      <ul>
+        <li>Keep the Watch on your wrist, unlocked and near your iPhone. The workout starts by itself.</li>
+        <li>If the Watch doesn't answer within about 30 seconds, tap <strong>Try the Watch again</strong>. You can also open WholeSignal on the Watch and start the session there.</li>
+        <li>You can always tap <strong>Start on iPhone only</strong> instead.</li>
+        <li>If you don't use a Watch, set <strong>Apple Watch</strong> to <strong>No Watch</strong> under <span class="path">Settings › Equipment</span>. Today's session and the Daily Hybrid then start on your iPhone.</li>
+      </ul>
+    </div>
+  </details>
+  <details>
+    <summary>Do I need an Apple Watch?</summary>
+    <div>
+      <p>No, but it's the best way to use WholeSignal. Without a Watch, tap <strong>Start on iPhone</strong> to run any session on your iPhone alone. For live heart rate, pair a Bluetooth heart-rate strap under <span class="path">Settings › Bike sensors</span>. Recovery and sleep use whatever is in Apple Health. HRV and wrist temperature usually come from an Apple Watch.</p>
+    </div>
+  </details>
+  <details>
+    <summary>How do I add the complications?</summary>
+    <div><p>Touch and hold your watch face, tap <strong>Edit</strong>, swipe to complications and pick <strong>WholeSignal</strong>. You can choose "Today's ride" (your suggested session) or "Quick log", if you use the log. The quick-log complication never shows names, counts or times.</p></div>
+  </details>
+
+  <h2 id="bike">Bike setup</h2>
+  <details>
+    <summary>My bike has one resistance knob and no screen. How do the cues work?</summary>
+    <div>
+      <p>Every part of a ride has a knob level from 1 to 10 and a cadence. When the level changes, WholeSignal tells you how far to turn, for example "Add about a quarter turn". The cue comes a little early, so your heart rate has time to follow.</p>
+      <ol>
+        <li>Tap the <strong>gear icon</strong> on Today or Ride, then <span class="path">Bike setup: knob and metronome</span>.</li>
+        <li>Back the knob all the way off. Pedal at about 90 rpm and add resistance a quarter turn at a time, counting turns.</li>
+        <li>Note where it feels light, moderate and hard, and enter those turn counts. The cues then use your bike's numbers.</li>
+      </ol>
+      <p>Turn on the metronome to get a short click on each beat on iPhone, and taps on your Watch.</p>
+    </div>
+  </details>
+  <details>
+    <summary>Can I connect a power meter, cadence sensor, heart-rate strap or smart bike?</summary>
+    <div>
+      <p>Yes. Go to <span class="path">Settings › Bike sensors</span>, pedal for a few seconds to wake the sensor, then pick it. WholeSignal reconnects to it automatically after that. With a smart bike or trainer and an FTP set under <span class="path">Heart-rate zones</span>, turn on <strong>Set resistance automatically</strong> and WholeSignal sets each interval for you.</p>
+      <p>If no sensors appear, check that Bluetooth is on and that WholeSignal is allowed under <span class="path">iOS Settings › WholeSignal › Bluetooth</span>.</p>
+    </div>
+  </details>
+  <details>
+    <summary>The heart-rate targets feel too hard or too easy.</summary>
+    <div><p>Check <span class="path">Settings › Heart-rate zones</span>. For a one-off bad day, use <strong>Intensity bias</strong> to shift every target a few beats up or down without editing your zones.</p></div>
+  </details>
+
+  <h2 id="log">Log and reminders</h2>
+  <details>
+    <summary>I can't see the Log tab.</summary>
+    <div><p>The log is optional and starts hidden. Turn it on in <span class="path">Settings › Show private Log tab</span> (the gear icon on Today). Turning it off again only hides the tab: everything in it is kept.</p></div>
+  </details>
+  <details>
+    <summary>What can I track?</summary>
+    <div>
+      <p>Anything you want to keep alongside your training. The log starts with a few everyday items: Water, Caffeine, Alcohol, Vitamins, Medication and Supplement. Add your own with <strong>Add item</strong>, with the units you use, and hide any starter item you don't need.</p>
+      <p>WholeSignal only records what you enter. It never suggests an amount.</p>
+    </div>
+  </details>
+  <details>
+    <summary>How do I set up a reminder for a routine?</summary>
+    <div>
+      <ol>
+        <li>Open the <strong>Log</strong> tab and tap <strong>Set up a routine</strong>, or <strong>Manage</strong> next to Routines.</li>
+        <li>Pick the item, the days and times, then turn on <strong>Remind me</strong>. You can add quiet hours.</li>
+        <li>Allow notifications when iOS asks. WholeSignal asks only when you first turn a reminder on.</li>
+      </ol>
+      <p>From a reminder you can tap <strong>Log it</strong> or <strong>Snooze 15 min</strong>. When several items are due together, you get one notification with <strong>Log all</strong>.</p>
+    </div>
+  </details>
+  <details>
+    <summary>What does "1 day late" mean?</summary>
+    <div><p>If a scheduled dose went by without being logged, WholeSignal tells you the next day and shows it on today's log as "1 day late". Tap <strong>Log it</strong> to record it now, or <strong>Skip it</strong> to mark it skipped. Either way the notice isn't sent again.</p></div>
+  </details>
+  <details>
+    <summary>My reminders don't show the item's name.</summary>
+    <div><p>That's deliberate, so nothing private shows on your Lock Screen. To show names, go to <span class="path">Log › Routines › Manage</span> and turn on <strong>Show item names in reminders</strong>. In discreet mode, reminders use your aliases instead.</p></div>
+  </details>
+  <details>
+    <summary>Reminders stopped arriving.</summary>
+    <div>
+      <ul>
+        <li>Check <span class="path">iOS Settings › Notifications › WholeSignal</span>, and any Focus that might be silencing it.</li>
+        <li>Open WholeSignal now and then. iOS limits how many reminders an app can schedule ahead, and WholeSignal tops them up each time it opens and during Background App Refresh. Keep <span class="path">Settings › General › Background App Refresh</span> on for WholeSignal.</li>
+      </ul>
+    </div>
+  </details>
+  <details>
+    <summary>Training and sleep reminders</summary>
+    <div><p>The Daily Hybrid card on the Strength tab has a <strong>Training reminder</strong> that only fires on days a session is waiting. <span class="path">Settings › Sleep need, wake times and reminders</span> has a wind-down reminder before tonight's bedtime.</p></div>
+  </details>
+
+  <h2 id="data">Your data</h2>
+  <details>
+    <summary>Where is my data kept?</summary>
+    <div><p>On your iPhone, with a copy of your log items on your Apple Watch for quick log. Workouts are saved to Apple Health. There's no account, no server and no iCloud sync. Ride recordings, ride summaries, effort ratings and progression levels are also kept out of iPhone backups. See the <a href="privacy.html">Privacy Policy</a> for details.</p></div>
+  </details>
+  <details>
+    <summary>How do I lock my log?</summary>
+    <div><p>Go to <span class="path">Settings › Privacy: lock and discreet mode</span>, then <strong>Lock with Face ID</strong>. Choose <strong>Log tab only</strong> or <strong>Whole app</strong>. A workout that's running is never interrupted by the lock. Your iPhone needs a passcode for the lock to work.</p></div>
+  </details>
+  <details>
+    <summary>How do I delete my data?</summary>
+    <div>
+      <ul>
+        <li><strong>Everything WholeSignal keeps on your iPhone:</strong> tap the <strong>gear icon</strong> on Today, then <span class="path">Your data: privacy policy, support and erase</span>, then <strong>Erase all WholeSignal data</strong>. It removes your log, supplies and routines, ride recordings and summaries, effort ratings, progression levels, cached Health readings, reminders and settings. WholeSignal asks you to confirm twice, and if you use the lock, asks for Face ID or your passcode first. There's no copy anywhere else, so this can't be undone. End any workout that's running first.</li>
+        <li><strong>Your Apple Watch:</strong> its copy of the log is replaced the next time it syncs with your iPhone. To clear the Watch completely, delete WholeSignal from it.</li>
+        <li><strong>Workouts in Apple Health:</strong> erasing doesn't change Apple Health. Open Health, tap your profile picture, then <span class="path">Apps › WholeSignal</span> to delete the data WholeSignal saved or turn off its access. Deleting the app doesn't remove them either.</li>
+        <li>Deleting the app also removes its files and settings. If you later restore your iPhone from an earlier backup, the files that were in that backup come back with it.</li>
+      </ul>
+    </div>
+  </details>
+  <details>
+    <summary>Moving to a new iPhone</summary>
+    <div><p>WholeSignal has no cloud sync. Your data moves with an iCloud or computer backup, or with Quick Start's device-to-device transfer. Health data moves with Health's own iCloud sync, if you have it turned on.</p></div>
+  </details>
+
+  <h2 id="contact">Contact</h2>
+  <div class="contact">
+    <p><strong>Get help:</strong> <a href="https://github.com/TPZZ759/wholesignal-support/issues/new">open a support request on GitHub</a> (a free GitHub account is needed). Requests there are public, so please don't include health details, log entries or anything personal.</p>
+    <p>Include your iPhone and Watch models, iOS and watchOS versions, and the WholeSignal version, which you'll find at the bottom of Settings. Please don't post screenshots of your log. We don't need them to help you.</p>
+  </div>
+
+  <footer>© 2026 Vithuja Padukka · <a href="privacy.html">Privacy Policy</a> · WholeSignal is free. It gives training guidance and is not a medical device.</footer>
+</main>
+</body>
+</html>
